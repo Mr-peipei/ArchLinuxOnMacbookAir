@@ -1,6 +1,26 @@
 
 # Arch Install Settings
 
+## Install wi-fi
+I cannnot use macbook air wi-fi (broadcom)
+so I will use tp-link wi-fi.
+```
+$ sudo pacman -S networkmanager
+$ sudo systemctl enable NetworkManager.service
+$ sudo pacman -S network-manager-applet xfce4-notifyd gnome-keyring
+```
+after install, logout and re-login
+
+
+## Install yay
+```
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+```
+なにかディレクトリを作ったあとに、makepkg -siとする
+
+
 ## Customize Arch Linux theme
 
 #### wallpaper
