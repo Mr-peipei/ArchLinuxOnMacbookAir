@@ -22,6 +22,8 @@ after reboot alt/option.
 ```
 # cgdisk /dev/sda
 ```
+![IMG_8667](https://user-images.githubusercontent.com/54967427/117983366-d881e580-b371-11eb-9377-a5a6ea4bfb4b.jpg)
+
 
 #### format
 ```
@@ -262,3 +264,5 @@ and add in ~/.config/fish/config.fish
 set -U FZF_LEGACY_KEYBINDINGS 0
 ```
 
+well done!!
+![Screenshot_2021-05-11_00-18-40](https://user-images.githubusercontent.com/54967427/117983591-1121bf00-b372-11eb-872d-e40498c99dd7.png)
