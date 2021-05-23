@@ -266,3 +266,28 @@ set -U FZF_LEGACY_KEYBINDINGS 0
 
 well done!!
 ![Screenshot_2021-05-11_00-18-40](https://user-images.githubusercontent.com/54967427/117983591-1121bf00-b372-11eb-872d-e40498c99dd7.png)
+
+## Japanase Settings
+
+install package
+```
+$ sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-mozc
+```
+
+create ~/.xprofile
+```
+export LC_CTYPE=ja_JP.utf-8
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+fcitx &
+```
+
+and settings in ~/.xinitrc
+```
+[ -f /etc/xprofile ] && source /etc/xprofile
+[ -f ~/.xprofile ] && source ~/.xprofile
+```
+
